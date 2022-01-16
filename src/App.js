@@ -9,8 +9,8 @@ class App extends Component {
 
     this.state = {
       monsters: [],
-      searchField: "",
-    };
+      searchField: ""
+     };
 
     //Whenever a method is called, this bind logic has to instantiate
     // this.handleChange = this.handleChange.bind(this);
@@ -36,7 +36,7 @@ class App extends Component {
         <h1>Monsters Rolodex</h1>
         <SearchBox
           placeholder="Search Monsters..."
-          handleChange={this.handleChange}
+          handleChange={this.handleChange} 
         />
         <Cardlist monsters={filteredMonsters} />
       </div>
